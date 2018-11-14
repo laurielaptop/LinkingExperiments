@@ -8,7 +8,6 @@
 
 import UIKit
 import TheExternalSwiftProtocolsFramework
-
 import TheExternalSwiftFramework
 import TheInternalSwiftFramework
 import TheExternalSwiftStaticLibrary
@@ -16,28 +15,29 @@ import TheInternalSwiftStaticLibrary
 import TheExternalObjCFramework
 import TheInternalObjCFramework
 
-enum Libraries {
+enum DataSource {
     case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, internalObjCFramework
-    static var dataSource: [[Libraries]] {
+    static var items: [[DataSource]] {
         return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework]]
     }
+    static func item(atIndexPath indexPath: IndexPath) -> DataSource {
+        return DataSource.items[indexPath.section][indexPath.row]
+    }
     var identifier: IdentifyProtocol {
-        var identifier: IdentifyProtocol
         switch self {
         case .externalSwiftFramework:
-            identifier = TheExternalSwiftFramework.Identifier()
+            return TheExternalSwiftFramework.Identifier()
         case .internalSwiftFramework:
-            identifier = TheInternalSwiftFramework.Identifier()
+            return TheInternalSwiftFramework.Identifier()
         case .externalSwiftStaticLibrary:
-            identifier = TheExternalSwiftStaticLibrary.Identifier()
+            return TheExternalSwiftStaticLibrary.Identifier()
         case .internalSwiftStaticLibrary:
-            identifier = TheInternalSwiftStaticLibrary.Identifier()
+            return TheInternalSwiftStaticLibrary.Identifier()
         case .externalObjCFramework:
-            identifier = TheExternalObjCFramework.TheExternalObjCFrameworkIdentifier()
+            return TheExternalObjCFramework.TheExternalObjCFrameworkIdentifier()
         case .internalObjCFramework:
-            identifier = TheInternalObjCFramework.TheInternalObjCFrameworkIdentifier()
+            return TheInternalObjCFramework.TheInternalObjCFrameworkIdentifier()
         }
-        return identifier
     }
 }
 
@@ -57,20 +57,20 @@ class LibraryListController: UITableViewController {
     // MARK: - UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return Libraries.dataSource.count
+        return DataSource.items.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Libraries.dataSource[section].count
+        return DataSource.items[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        let library = Libraries.dataSource[indexPath.section][indexPath.row];
-        cell.textLabel?.text = library.identifier.name
+        let item = DataSource.item(atIndexPath: indexPath)
+        cell.textLabel?.text = item.identifier.name
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
@@ -84,10 +84,10 @@ class LibraryListController: UITableViewController {
     }
     
     // MARK: - UITableViewDelegate
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let library = Libraries.dataSource[indexPath.section][indexPath.row];
-        self.navigationController?.pushViewController(library.identifier.controller, animated: true)
+        let item = DataSource.item(atIndexPath: indexPath)
+        self.navigationController?.pushViewController(item.identifier.controller, animated: true)
     }
     
 }
