@@ -49,7 +49,10 @@ class Texture {
     }
 
     static func loadFromFile(_ filePath: String) -> Texture? {
-        let fullPath = Bundle.main.resourcePath! + "/" + filePath
+
+        let frameworksPath = Bundle.main.bundlePath.stringByAppendingPathComponent(path: "TheExternalSwiftStaticFramework.framework")
+        let bundle = Bundle.init(path: frameworksPath)!
+        let fullPath = bundle.resourcePath! + "/" + filePath
         #if !os(Android)
         let dataProvider = CGDataProvider(filename: fullPath)
         if dataProvider == nil {

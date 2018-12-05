@@ -19,6 +19,7 @@
 		8FF6A19E21B8135900D0DA89 /* GLKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF6A19321B8135900D0DA89 /* GLKController.swift */; };
 		8FF6A19F21B8135900D0DA89 /* Cylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF6A19421B8135900D0DA89 /* Cylinder.swift */; };
 		8FF6A1A021B8135900D0DA89 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF6A19521B8135900D0DA89 /* Identifier.swift */; };
+		8FF6A1A221B814BD00D0DA89 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF6A1A121B814BD00D0DA89 /* String+Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8FF6A19321B8135900D0DA89 /* GLKController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLKController.swift; sourceTree = "<group>"; };
 		8FF6A19421B8135900D0DA89 /* Cylinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cylinder.swift; sourceTree = "<group>"; };
 		8FF6A19521B8135900D0DA89 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		8FF6A1A121B814BD00D0DA89 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				8FF6A19021B8135900D0DA89 /* Texture.swift */,
 				8FF6A18021B812D200D0DA89 /* TheExternalSwiftStaticFramework.h */,
 				8FF6A18121B812D200D0DA89 /* Info.plist */,
+				8FF6A1A121B814BD00D0DA89 /* String+Utilities.swift */,
 			);
 			path = TheExternalSwiftStaticFramework;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				8FF6A19B21B8135900D0DA89 /* Texture.swift in Sources */,
 				8FF6A19921B8135900D0DA89 /* ShaderProgram.swift in Sources */,
 				8FF6A1A021B8135900D0DA89 /* Identifier.swift in Sources */,
+				8FF6A1A221B814BD00D0DA89 /* String+Utilities.swift in Sources */,
 				8FF6A19A21B8135900D0DA89 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

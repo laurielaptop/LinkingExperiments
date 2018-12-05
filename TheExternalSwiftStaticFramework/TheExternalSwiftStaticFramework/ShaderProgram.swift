@@ -95,7 +95,9 @@ class ShaderProgram {
 
     private func compileShader(_ file: String, withType type: GLenum) -> GLuint? {
         // Load the shader source.
-        let path = Bundle.main.resourcePath! + "/" + file
+        let frameworksPath = Bundle.main.bundlePath.stringByAppendingPathComponent(path: "TheExternalSwiftStaticFramework.framework")
+        let bundle = Bundle.init(path: frameworksPath)!
+        let path = bundle.resourcePath! + "/" + file
         let source = try? String(contentsOfFile: path, encoding: String.Encoding.ascii)
         if source == nil {
             NSLog("Unable to load \(file)")

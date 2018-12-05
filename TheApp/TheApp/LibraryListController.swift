@@ -9,6 +9,7 @@
 import UIKit
 import TheExternalSwiftProtocolsFramework
 import TheExternalSwiftFramework
+import TheExternalSwiftStaticFramework
 import TheInternalSwiftFramework
 import TheExternalSwiftStaticLibrary
 import TheInternalSwiftStaticLibrary
@@ -17,9 +18,9 @@ import TheExternalObjCStaticFramework
 import TheInternalObjCFramework
 
 enum DataSource {
-    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework
+    case externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework
     static var items: [[DataSource]] {
-        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, externalObjCStaticFramework, internalObjCFramework]]
+        return [[externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, externalObjCStaticFramework, internalObjCFramework]]
     }
     static func item(atIndexPath indexPath: IndexPath) -> DataSource {
         return DataSource.items[indexPath.section][indexPath.row]
@@ -28,6 +29,8 @@ enum DataSource {
         switch self {
         case .externalSwiftFramework:
             return TheExternalSwiftFramework.Identifier()
+        case .externalSwiftStaticFramework:
+            return TheExternalSwiftStaticFramework.Identifier()
         case .internalSwiftFramework:
             return TheInternalSwiftFramework.Identifier()
         case .externalSwiftStaticLibrary:
