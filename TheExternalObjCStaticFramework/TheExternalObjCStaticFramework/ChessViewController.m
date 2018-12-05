@@ -27,7 +27,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Frameworks/TheExternalObjCStaticFramework.framework/chess" ofType:@"html"];
+    NSString *frameworksPath = [[[NSBundle mainBundle] privateFrameworksPath] stringByAppendingPathComponent:@"TheExternalObjCStaticFramework.framework"];
+    NSBundle *bundle = [NSBundle bundleWithPath:frameworksPath];
+    NSString *path = [bundle pathForResource:@"chess" ofType:@"html"];
     if (path) {
         NSURL *url = [[NSURL alloc] initFileURLWithPath: path];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
