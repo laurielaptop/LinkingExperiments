@@ -24,7 +24,6 @@
 		8F38DA6721B8789700D795AD /* TheInternalObjCStaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F38DA6F21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA6D21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F38DA7021B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA6E21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m */; };
-		8F38DA8421B880DA00D795AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA8321B880DA00D795AD /* CoreGraphics.framework */; };
 		8F38DA8721B886DE00D795AD /* BounceControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA8521B886DE00D795AD /* BounceControllerViewController.h */; };
 		8F38DA8821B886DE00D795AD /* BounceControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA8621B886DE00D795AD /* BounceControllerViewController.m */; };
 		8F38DA8A21B888C000D795AD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F38DA8921B888C000D795AD /* Media.xcassets */; };
@@ -196,7 +195,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F38DA8421B880DA00D795AD /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

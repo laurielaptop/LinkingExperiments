@@ -10,6 +10,8 @@
 
 @interface ExternalWebViewController ()
 
+#pragma mark - Controller Properties
+
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
@@ -17,7 +19,7 @@
 
 @implementation ExternalWebViewController
 
-// MARK: - View Lifecycle
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +45,7 @@
     }
 }
 
-// MARK: - WKNavigationDelegate
+#pragma mark - WKNavigationDelegate
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     [self.activityIndicator stopAnimating];

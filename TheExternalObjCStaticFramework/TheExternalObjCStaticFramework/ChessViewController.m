@@ -10,11 +10,15 @@
 
 @interface ChessViewController ()
 
+#pragma mark - Controller Properties
+
 @property (nonatomic, strong) WKWebView *webView;
 
 @end
 
 @implementation ChessViewController
+
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];

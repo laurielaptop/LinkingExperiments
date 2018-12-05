@@ -14,6 +14,8 @@
 
 @implementation ImageViewController
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Image View";

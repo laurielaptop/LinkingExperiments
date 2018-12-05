@@ -71,6 +71,8 @@ const GLubyte Indices[] = {
 
 @interface OpenGLViewController() {}
 
+#pragma mark - Controller Properties
+
 @property (nonatomic, assign) float curBlue;
 @property (nonatomic, assign) BOOL increasing;
 @property (nonatomic, assign) GLuint vertexBuffer;
@@ -113,7 +115,6 @@ const GLubyte Indices[] = {
 }
 
 #pragma mark - Controller Methods
-
 
 - (BOOL)shouldAutorotate {
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];

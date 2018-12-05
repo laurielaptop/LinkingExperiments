@@ -10,6 +10,8 @@
 
 @interface InternalWebViewController ()
 
+#pragma mark - Controller Properties
+
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
@@ -17,7 +19,7 @@
 
 @implementation InternalWebViewController
 
-// MARK: - View Lifecycle
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +36,8 @@
     [self.activityIndicator startAnimating];
 }
 
+#pragma mark - Controller Methods
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSURL *url = [NSURL URLWithString:@"https://maps.google.com"];
@@ -43,7 +47,7 @@
     }
 }
 
-// MARK: - WKNavigationDelegate
+#pragma mark - WKNavigationDelegate
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     [self.activityIndicator stopAnimating];

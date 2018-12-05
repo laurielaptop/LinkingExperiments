@@ -10,11 +10,15 @@
 
 @interface BounceControllerViewController ()
 
+#pragma mark - Controller Properties
+
 @property (nonatomic, strong) UIImageView *ballView;
 
 @end
 
 @implementation BounceControllerViewController
+
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
