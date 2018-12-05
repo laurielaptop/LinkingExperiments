@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    func stringByAppendingPathComponent(path: String) -> String {
+    public func stringByAppendingPathComponent(path: String) -> String {
         let temp = self as NSString
         return temp.appendingPathComponent(path)
     }

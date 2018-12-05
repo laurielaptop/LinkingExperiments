@@ -1,6 +1,6 @@
 //
 //  DocumentViewController.swift
-//  TheInternalSwiftFramework
+//  TheInternalSwiftStaticFramework
 //
 //  Created by Laurie Keith on 14/11/2018.
 //  Copyright © 2018 Laurie Laptop. All rights reserved.
@@ -16,7 +16,9 @@ open class DocumentViewController: UIViewController, UIDocumentInteractionContro
         super.viewDidLoad()
         self.title = "Document View"
         self.view.backgroundColor = UIColor.white
-        guard let url = Bundle(for: DocumentViewController.self).url(forResource: "Homer", withExtension: "docx") else {
+        let frameworksPath = Bundle.main.bundlePath.stringByAppendingPathComponent(path: "Frameworks/TheInternalSwiftStaticFramework.framework")
+        let bundle = Bundle.init(path: frameworksPath)!
+        guard let url = bundle.url(forResource: "Homer", withExtension: "docx") else {
             return
         }
         let documentController = UIDocumentInteractionController.init(url: url)

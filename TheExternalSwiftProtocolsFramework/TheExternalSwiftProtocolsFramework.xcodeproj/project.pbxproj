@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F38DA5921B8415B00D795AD /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA5821B8415B00D795AD /* String+Utilities.swift */; };
 		8FFAEBA9219C94B800D165FD /* TheExternalSwiftProtocolsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFAEBA7219C94B800D165FD /* TheExternalSwiftProtocolsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFAEBB0219C94CE00D165FD /* IdentifyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEBAF219C94CE00D165FD /* IdentifyProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F38DA5821B8415B00D795AD /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 		8FFAEBA4219C94B800D165FD /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEBA7219C94B800D165FD /* TheExternalSwiftProtocolsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheExternalSwiftProtocolsFramework.h; sourceTree = "<group>"; };
 		8FFAEBA8219C94B800D165FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,9 +50,10 @@
 		8FFAEBA6219C94B800D165FD /* TheExternalSwiftProtocolsFramework */ = {
 			isa = PBXGroup;
 			children = (
-				8FFAEBA7219C94B800D165FD /* TheExternalSwiftProtocolsFramework.h */,
-				8FFAEBA8219C94B800D165FD /* Info.plist */,
 				8FFAEBAF219C94CE00D165FD /* IdentifyProtocol.swift */,
+				8FFAEBA8219C94B800D165FD /* Info.plist */,
+				8F38DA5821B8415B00D795AD /* String+Utilities.swift */,
+				8FFAEBA7219C94B800D165FD /* TheExternalSwiftProtocolsFramework.h */,
 			);
 			path = TheExternalSwiftProtocolsFramework;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FFAEBB0219C94CE00D165FD /* IdentifyProtocol.swift in Sources */,
+				8F38DA5921B8415B00D795AD /* String+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
