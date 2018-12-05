@@ -12,7 +12,7 @@
 @implementation TheInternalObjCFrameworkIdentifier
 
 - (NSString*)name {
-    return @"Internal Objective-C Framework";
+    return @"Internal Objective-C Dynamic Framework";
 }
 
 - (UIViewController*)controller {

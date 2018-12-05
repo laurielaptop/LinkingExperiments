@@ -12,7 +12,7 @@ import TheExternalSwiftProtocolsFramework
 @objc open class Identifier: NSObject, IdentifyProtocol {
 
     @objc public lazy var name = {
-        return "Internal Swift Framework"
+        return "Internal Swift Dynamic Framework"
     }()
     
     @objc public lazy var controller: UIViewController = {

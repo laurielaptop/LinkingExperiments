@@ -12,7 +12,7 @@
 @implementation TheExternalObjCFrameworkIdentifier
 
 - (NSString*)name {
-    return @"External Objective-C Framework";
+    return @"External Objective-C Dynamic Framework";
 }
 
 - (UIViewController*)controller {
