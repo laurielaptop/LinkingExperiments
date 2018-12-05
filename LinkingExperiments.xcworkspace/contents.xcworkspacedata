@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TheExternalSwiftStaticFramework/TheExternalSwiftStaticFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TheExternalObjCStaticFramework/TheExternalObjCStaticFramework.xcodeproj">
    </FileRef>
    <FileRef

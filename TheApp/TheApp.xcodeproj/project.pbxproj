@@ -16,6 +16,8 @@
 		8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */; };
 		8FF6A17121B811B400D0DA89 /* TheInternalSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */; };
 		8FF6A17221B8121E00D0DA89 /* TheExternalObjCStaticFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FF6A18921B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A18821B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework */; };
+		8FF6A18A21B8131100D0DA89 /* TheExternalSwiftStaticFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FF6A18821B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEAFD219C5CCD00D165FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */; };
 		8FFAEB02219C5CCD00D165FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB00219C5CCD00D165FD /* Main.storyboard */; };
 		8FFAEB04219C5CCE00D165FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB03219C5CCE00D165FD /* Assets.xcassets */; };
@@ -42,6 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				8FF6A18A21B8131100D0DA89 /* TheExternalSwiftStaticFramework.framework in CopyFiles */,
 				8FF6A17221B8121E00D0DA89 /* TheExternalObjCStaticFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +66,7 @@
 		8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16B21B811B400D0DA89 /* TheExternalSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16D21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A18821B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAF9219C5CCD00D165FD /* TheApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFAEB01219C5CCD00D165FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF6A18921B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework in Frameworks */,
 				8FF6A16F21B811B400D0DA89 /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
 				8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */,
 				8FF6A17121B811B400D0DA89 /* TheInternalSwiftFramework.framework in Frameworks */,
@@ -184,6 +189,7 @@
 				8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */,
 				8FF6A16B21B811B400D0DA89 /* TheExternalSwiftFramework.framework */,
 				8FF6A16D21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework */,
+				8FF6A18821B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
