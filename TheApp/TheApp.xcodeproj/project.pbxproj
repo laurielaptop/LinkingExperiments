@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F29B43121B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */; };
+		8F29B44E21B7F86D007A4A35 /* TheExternalObjCStaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEAFD219C5CCD00D165FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */; };
 		8FFAEB02219C5CCD00D165FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB00219C5CCD00D165FD /* Main.storyboard */; };
 		8FFAEB04219C5CCE00D165FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB03219C5CCE00D165FD /* Assets.xcassets */; };
@@ -59,12 +61,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8F29B44B21B7F814007A4A35 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEB49219C5D5E00D165FD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8F29B44E21B7F86D007A4A35 /* TheExternalObjCStaticFramework.framework in Embed Frameworks */,
 				8FFAEB7E219C6DBE00D165FD /* TheInternalSwiftFramework.framework in Embed Frameworks */,
 				8FFAEBB4219C950100D165FD /* TheExternalSwiftProtocolsFramework.framework in Embed Frameworks */,
 				8FFAEBE1219CA30E00D165FD /* TheExternalObjCFramework.framework in Embed Frameworks */,
@@ -86,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAF9219C5CCD00D165FD /* TheApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFAEB01219C5CCD00D165FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F29B43121B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework in Frameworks */,
 				8FFAEB5F219C600700D165FD /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
 				8FFAEB5E219C600700D165FD /* libTheExternalSwiftStaticLibrary.a in Frameworks */,
 				8FFAEBE0219CA30E00D165FD /* TheExternalObjCFramework.framework in Frameworks */,
@@ -214,6 +228,7 @@
 		8FFAEB5C219C600700D165FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */,
 				8FFAEC20219CC7B700D165FD /* libTheExternalObjCStaticLibrary.a */,
 				8FFAEBFB219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework */,
 				8FFAEBB7219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework */,
@@ -282,6 +297,7 @@
 				8FFAEAF6219C5CCD00D165FD /* Frameworks */,
 				8FFAEAF7219C5CCD00D165FD /* Resources */,
 				8FFAEB49219C5D5E00D165FD /* Embed Frameworks */,
+				8F29B44B21B7F814007A4A35 /* CopyFiles */,
 			);
 			buildRules = (
 			);

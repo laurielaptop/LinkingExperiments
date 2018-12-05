@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 import AVFoundation
 import TheExternalSwiftFramework
 
@@ -17,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         TheExternalSwiftFramework.VideoPlaybackViewController.configureAVAudioSession()
+        let enumerator = FileManager.default.enumerator(atPath: Bundle.main.bundlePath)
+        print("-----------BUNDLE CONTENTS----------")
+        while let filePath = enumerator?.nextObject() {
+            print("\(filePath)")
+            
+        }
+        print("-----------BUNDLE CONTENTS----------")
         return true
     }
 

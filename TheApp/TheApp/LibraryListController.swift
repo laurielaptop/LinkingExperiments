@@ -13,12 +13,13 @@ import TheInternalSwiftFramework
 import TheExternalSwiftStaticLibrary
 import TheInternalSwiftStaticLibrary
 import TheExternalObjCFramework
+import TheExternalObjCStaticFramework
 import TheInternalObjCFramework
 
 enum DataSource {
-    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, internalObjCFramework
+    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework
     static var items: [[DataSource]] {
-        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework]]
+        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, externalObjCStaticFramework, internalObjCFramework]]
     }
     static func item(atIndexPath indexPath: IndexPath) -> DataSource {
         return DataSource.items[indexPath.section][indexPath.row]
@@ -35,6 +36,8 @@ enum DataSource {
             return TheInternalSwiftStaticLibrary.Identifier()
         case .externalObjCFramework:
             return TheExternalObjCFramework.TheExternalObjCFrameworkIdentifier()
+        case .externalObjCStaticFramework:
+            return TheExternalObjCStaticFramework.TheExternalObjCStaticFrameworkIdentifier()
         case .internalObjCFramework:
             return TheInternalObjCFramework.TheInternalObjCFrameworkIdentifier()
         }
