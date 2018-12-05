@@ -27,12 +27,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
-    //NSBundle *bundle = [NSBundle bundleForClass:[ChessViewController class]];
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSLog(@"bundle:%@", bundle);
-
-    NSString *path = [bundle pathForResource:@"Frameworks/TheExternalObjCStaticFramework.framework/chess" ofType:@"html"];
-    NSLog(@"path:%@", path);
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Frameworks/TheExternalObjCStaticFramework.framework/chess" ofType:@"html"];
     if (path) {
         NSURL *url = [[NSURL alloc] initFileURLWithPath: path];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
