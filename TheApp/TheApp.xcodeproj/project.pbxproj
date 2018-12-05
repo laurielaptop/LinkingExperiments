@@ -19,6 +19,15 @@
 		8F38DA5321B83EA800D795AD /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA5221B83EA800D795AD /* Identifier.swift */; };
 		8F38DA5621B83F5700D795AD /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA5421B83F5600D795AD /* DocumentViewController.swift */; };
 		8F38DA5721B83F5700D795AD /* Homer.docx in Resources */ = {isa = PBXBuildFile; fileRef = 8F38DA5521B83F5700D795AD /* Homer.docx */; };
+		8F38DA6321B8789700D795AD /* TheInternalObjCStaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA6121B8789700D795AD /* TheInternalObjCStaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F38DA6621B8789700D795AD /* TheInternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */; };
+		8F38DA6721B8789700D795AD /* TheInternalObjCStaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F38DA6F21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA6D21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F38DA7021B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA6E21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m */; };
+		8F38DA8421B880DA00D795AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA8321B880DA00D795AD /* CoreGraphics.framework */; };
+		8F38DA8721B886DE00D795AD /* BounceControllerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA8521B886DE00D795AD /* BounceControllerViewController.h */; };
+		8F38DA8821B886DE00D795AD /* BounceControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA8621B886DE00D795AD /* BounceControllerViewController.m */; };
+		8F38DA8A21B888C000D795AD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F38DA8921B888C000D795AD /* Media.xcassets */; };
 		8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */; };
 		8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */; };
 		8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; };
@@ -57,6 +66,13 @@
 			remoteGlobalIDString = 8F38DA4421B83C4D00D795AD;
 			remoteInfo = TheInternalSwiftStaticFramework;
 		};
+		8F38DA6421B8789700D795AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FFAEAF1219C5CCD00D165FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F38DA5E21B8789700D795AD;
+			remoteInfo = TheInternalObjCStaticFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +104,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8F38DA6721B8789700D795AD /* TheInternalObjCStaticFramework.framework in Embed Frameworks */,
 				8F38DA4D21B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -118,6 +135,15 @@
 		8F38DA5221B83EA800D795AD /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		8F38DA5421B83F5600D795AD /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		8F38DA5521B83F5700D795AD /* Homer.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Homer.docx; sourceTree = "<group>"; };
+		8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheInternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F38DA6121B8789700D795AD /* TheInternalObjCStaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticFramework.h; sourceTree = "<group>"; };
+		8F38DA6221B8789700D795AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F38DA6D21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticFrameworkIdentifier.h; sourceTree = "<group>"; };
+		8F38DA6E21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheInternalObjCStaticFrameworkIdentifier.m; sourceTree = "<group>"; };
+		8F38DA8321B880DA00D795AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F38DA8521B886DE00D795AD /* BounceControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceControllerViewController.h; sourceTree = "<group>"; };
+		8F38DA8621B886DE00D795AD /* BounceControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceControllerViewController.m; sourceTree = "<group>"; };
+		8F38DA8921B888C000D795AD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +192,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F38DA5C21B8789700D795AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA8421B880DA00D795AD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF6219C5CCD00D165FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +215,7 @@
 				8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */,
 				8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */,
 				8FF6A16C21B811B400D0DA89 /* TheExternalSwiftFramework.framework in Frameworks */,
+				8F38DA6621B8789700D795AD /* TheInternalObjCStaticFramework.framework in Frameworks */,
 				8FF6A16E21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +268,20 @@
 			path = TheInternalSwiftStaticFramework;
 			sourceTree = "<group>";
 		};
+		8F38DA6021B8789700D795AD /* TheInternalObjCStaticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				8F38DA8521B886DE00D795AD /* BounceControllerViewController.h */,
+				8F38DA8621B886DE00D795AD /* BounceControllerViewController.m */,
+				8F38DA6221B8789700D795AD /* Info.plist */,
+				8F38DA8921B888C000D795AD /* Media.xcassets */,
+				8F38DA6121B8789700D795AD /* TheInternalObjCStaticFramework.h */,
+				8F38DA6D21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h */,
+				8F38DA6E21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m */,
+			);
+			path = TheInternalObjCStaticFramework;
+			sourceTree = "<group>";
+		};
 		8FFAEAF0219C5CCD00D165FD = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +289,7 @@
 				8FFAEAFA219C5CCD00D165FD /* Products */,
 				8FFAEAFB219C5CCD00D165FD /* TheApp */,
 				8FFAEBEC219CBCE000D165FD /* TheInternalObjCFramework */,
+				8F38DA6021B8789700D795AD /* TheInternalObjCStaticFramework */,
 				8F38DA0821B8219900D795AD /* TheInternalObjCStaticLibrary */,
 				8FFAEB77219C6DBE00D165FD /* TheInternalSwiftFramework */,
 				8F38DA4621B83C4D00D795AD /* TheInternalSwiftStaticFramework */,
@@ -256,6 +306,7 @@
 				8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */,
 				8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */,
 				8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */,
+				8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +337,7 @@
 		8FFAEB5C219C600700D165FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F38DA8321B880DA00D795AD /* CoreGraphics.framework */,
 				8F38DA3E21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a */,
 				8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */,
 				8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */,
@@ -331,6 +383,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F38DA4921B83C4D00D795AD /* TheInternalSwiftStaticFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F38DA5A21B8789700D795AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA6321B8789700D795AD /* TheInternalObjCStaticFramework.h in Headers */,
+				8F38DA8721B886DE00D795AD /* BounceControllerViewController.h in Headers */,
+				8F38DA6F21B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +452,24 @@
 			productReference = 8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8F38DA5E21B8789700D795AD /* TheInternalObjCStaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F38DA6821B8789700D795AD /* Build configuration list for PBXNativeTarget "TheInternalObjCStaticFramework" */;
+			buildPhases = (
+				8F38DA5A21B8789700D795AD /* Headers */,
+				8F38DA5B21B8789700D795AD /* Sources */,
+				8F38DA5C21B8789700D795AD /* Frameworks */,
+				8F38DA5D21B8789700D795AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheInternalObjCStaticFramework;
+			productName = TheInternalObjCStaticFramework;
+			productReference = 8F38DA5F21B8789700D795AD /* TheInternalObjCStaticFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8FFAEAF8219C5CCD00D165FD /* TheApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FFAEB0B219C5CCE00D165FD /* Build configuration list for PBXNativeTarget "TheApp" */;
@@ -404,6 +484,7 @@
 			);
 			dependencies = (
 				8F38DA4B21B83C4D00D795AD /* PBXTargetDependency */,
+				8F38DA6521B8789700D795AD /* PBXTargetDependency */,
 			);
 			name = TheApp;
 			productName = TheApp;
@@ -481,6 +562,10 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
+					8F38DA5E21B8789700D795AD = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 					8FFAEAF8219C5CCD00D165FD = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -515,6 +600,7 @@
 				8FFAEBEA219CBCE000D165FD /* TheInternalObjCFramework */,
 				8F38DA0621B8219900D795AD /* TheInternalObjCStaticLibrary */,
 				8F38DA4421B83C4D00D795AD /* TheInternalSwiftStaticFramework */,
+				8F38DA5E21B8789700D795AD /* TheInternalObjCStaticFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -525,6 +611,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F38DA5721B83F5700D795AD /* Homer.docx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F38DA5D21B8789700D795AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA8A21B888C000D795AD /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +689,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F38DA5B21B8789700D795AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA7021B878E900D795AD /* TheInternalObjCStaticFrameworkIdentifier.m in Sources */,
+				8F38DA8821B886DE00D795AD /* BounceControllerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF5219C5CCD00D165FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +741,11 @@
 			isa = PBXTargetDependency;
 			target = 8F38DA4421B83C4D00D795AD /* TheInternalSwiftStaticFramework */;
 			targetProxy = 8F38DA4A21B83C4D00D795AD /* PBXContainerItemProxy */;
+		};
+		8F38DA6521B8789700D795AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F38DA5E21B8789700D795AD /* TheInternalObjCStaticFramework */;
+			targetProxy = 8F38DA6421B8789700D795AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -743,6 +851,67 @@
 				);
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurielaptop.TheInternalSwiftStaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F38DA6921B8789700D795AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TheInternalObjCStaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurielaptop.TheInternalObjCStaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F38DA6A21B8789700D795AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TheInternalObjCStaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurielaptop.TheInternalObjCStaticFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -872,7 +1041,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
@@ -900,7 +1069,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
@@ -1088,6 +1257,15 @@
 			buildConfigurations = (
 				8F38DA4F21B83C4D00D795AD /* Debug */,
 				8F38DA5021B83C4D00D795AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F38DA6821B8789700D795AD /* Build configuration list for PBXNativeTarget "TheInternalObjCStaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F38DA6921B8789700D795AD /* Debug */,
+				8F38DA6A21B8789700D795AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

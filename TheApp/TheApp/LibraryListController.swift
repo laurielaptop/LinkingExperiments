@@ -8,21 +8,28 @@
 
 import UIKit
 import TheExternalSwiftProtocolsFramework
+
 import TheExternalSwiftFramework
 import TheInternalSwiftFramework
+
 import TheExternalSwiftStaticFramework
 import TheInternalSwiftStaticFramework
+
 import TheExternalSwiftStaticLibrary
 import TheInternalSwiftStaticLibrary
-import TheExternalObjCFramework
+
 import TheExternalObjCStaticFramework
-import TheInternalObjCFramework
+import TheInternalObjCStaticFramework
+
 import TheExternalObjCFramework
+import TheInternalObjCFramework
 
 enum DataSource {
-    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework, internalObjCStaticLibrary, externalObjCStaticLibrary
+    
+    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, internalObjCFramework, externalObjCStaticFramework, internalObjCStaticFramework, externalObjCStaticLibrary, internalObjCStaticLibrary
+    
     static var items: [[DataSource]] {
-        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework, externalObjCStaticFramework, externalObjCStaticLibrary, internalObjCStaticLibrary]]
+        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework], [externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework, externalObjCStaticFramework, internalObjCStaticFramework], [externalObjCStaticLibrary, internalObjCStaticLibrary]]
     }
     static func item(atIndexPath indexPath: IndexPath) -> DataSource {
         return DataSource.items[indexPath.section][indexPath.row]
@@ -45,6 +52,8 @@ enum DataSource {
             return TheExternalObjCFramework.TheExternalObjCFrameworkIdentifier()
         case .externalObjCStaticFramework:
             return TheExternalObjCStaticFramework.TheExternalObjCStaticFrameworkIdentifier()
+        case .internalObjCStaticFramework:
+            return TheInternalObjCStaticFramework.TheInternalObjCStaticFrameworkIdentifier()
         case .internalObjCFramework:
             return TheInternalObjCFramework.TheInternalObjCFrameworkIdentifier()
         case .internalObjCStaticLibrary:
@@ -89,9 +98,13 @@ class LibraryListController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Swift"
+            return "Swift Framework"
         case 1:
-            return "Objective-C"
+            return "Swift Library"
+        case 2:
+            return "Objective-C Framework"
+        case 3:
+            return "Objective-C Library"
         default:
             break
         }
