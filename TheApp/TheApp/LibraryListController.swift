@@ -18,9 +18,9 @@ import TheExternalObjCStaticFramework
 import TheInternalObjCFramework
 
 enum DataSource {
-    case externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework
+    case externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework, internalObjCStaticLibrary
     static var items: [[DataSource]] {
-        return [[externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, externalObjCStaticFramework, internalObjCFramework]]
+        return [[externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, externalObjCStaticFramework, internalObjCFramework, internalObjCStaticLibrary]]
     }
     static func item(atIndexPath indexPath: IndexPath) -> DataSource {
         return DataSource.items[indexPath.section][indexPath.row]
@@ -43,8 +43,11 @@ enum DataSource {
             return TheExternalObjCStaticFramework.TheExternalObjCStaticFrameworkIdentifier()
         case .internalObjCFramework:
             return TheInternalObjCFramework.TheInternalObjCFrameworkIdentifier()
+        case .internalObjCStaticLibrary:
+            return TheInternalObjCStaticLibraryIdentifier()
         }
     }
+
 }
 
 class LibraryListController: UITableViewController {
@@ -52,7 +55,7 @@ class LibraryListController: UITableViewController {
     // MARK: - Controller Properties
     
     let reuseIdentifier = "Cell"
-    
+
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F38DA0B21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA0A21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m */; };
+		8F38DA1021B821B900D795AD /* libTheInternalObjCStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */; };
+		8F38DA1821B8294600D795AD /* TheInternalObjCStaticLibraryIdentifier.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */; };
+		8F38DA1921B8294600D795AD /* TheInternalObjCStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */; };
+		8F38DA1C21B82BDF00D795AD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA1B21B82BDF00D795AD /* WebViewController.m */; };
 		8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */; };
 		8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */; };
 		8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; };
@@ -49,6 +54,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F38DA0521B8219900D795AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8F38DA1821B8294600D795AD /* TheInternalObjCStaticLibraryIdentifier.h in CopyFiles */,
+				8F38DA1921B8294600D795AD /* TheInternalObjCStaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEB4C219C5DA700D165FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +77,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheInternalObjCStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticLibraryIdentifier.h; sourceTree = "<group>"; };
+		8F38DA0A21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheInternalObjCStaticLibraryIdentifier.m; sourceTree = "<group>"; };
+		8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticLibrary.h; sourceTree = "<group>"; };
+		8F38DA1A21B82BDF00D795AD /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		8F38DA1B21B82BDF00D795AD /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,10 +117,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F38DA0421B8219900D795AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF6219C5CCD00D165FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F38DA1021B821B900D795AD /* libTheInternalObjCStaticLibrary.a in Frameworks */,
 				8FF6A18921B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework in Frameworks */,
 				8FF6A16F21B811B400D0DA89 /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
 				8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */,
@@ -135,6 +165,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F38DA0821B8219900D795AD /* TheInternalObjCStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */,
+				8F38DA0A21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m */,
+				8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */,
+				8F38DA1A21B82BDF00D795AD /* WebViewController.h */,
+				8F38DA1B21B82BDF00D795AD /* WebViewController.m */,
+			);
+			path = TheInternalObjCStaticLibrary;
+			sourceTree = "<group>";
+		};
 		8FFAEAF0219C5CCD00D165FD = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +184,7 @@
 				8FFAEAFA219C5CCD00D165FD /* Products */,
 				8FFAEAFB219C5CCD00D165FD /* TheApp */,
 				8FFAEBEC219CBCE000D165FD /* TheInternalObjCFramework */,
+				8F38DA0821B8219900D795AD /* TheInternalObjCStaticLibrary */,
 				8FFAEB77219C6DBE00D165FD /* TheInternalSwiftFramework */,
 				8FFAEB4F219C5DA700D165FD /* TheInternalSwiftStaticLibrary */,
 			);
@@ -154,6 +197,7 @@
 				8FFAEB4E219C5DA700D165FD /* libTheInternalSwiftStaticLibrary.a */,
 				8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */,
 				8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */,
+				8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +288,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8F38DA0621B8219900D795AD /* TheInternalObjCStaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F38DA0F21B8219900D795AD /* Build configuration list for PBXNativeTarget "TheInternalObjCStaticLibrary" */;
+			buildPhases = (
+				8F38DA0321B8219900D795AD /* Sources */,
+				8F38DA0421B8219900D795AD /* Frameworks */,
+				8F38DA0521B8219900D795AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheInternalObjCStaticLibrary;
+			productName = TheInternalObjCStaticLibrary;
+			productReference = 8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8FFAEAF8219C5CCD00D165FD /* TheApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FFAEB0B219C5CCE00D165FD /* Build configuration list for PBXNativeTarget "TheApp" */;
@@ -326,6 +387,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Laurie Laptop";
 				TargetAttributes = {
+					8F38DA0621B8219900D795AD = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					8FFAEAF8219C5CCD00D165FD = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -358,6 +422,7 @@
 				8FFAEB4D219C5DA700D165FD /* TheInternalSwiftStaticLibrary */,
 				8FFAEB75219C6DBE00D165FD /* TheInternalSwiftFramework */,
 				8FFAEBEA219CBCE000D165FD /* TheInternalObjCFramework */,
+				8F38DA0621B8219900D795AD /* TheInternalObjCStaticLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -412,6 +477,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F38DA0321B8219900D795AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA0B21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m in Sources */,
+				8F38DA1C21B82BDF00D795AD /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF5219C5CCD00D165FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,6 +544,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8F38DA0D21B8219900D795AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F38DA0E21B8219900D795AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8FFAEB09219C5CCE00D165FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
-				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheExternalObjCStaticLibrary";
+				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary";
 				INFOPLIST_FILE = TheApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,7 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
-				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheExternalObjCStaticLibrary";
+				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary";
 				INFOPLIST_FILE = TheApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -784,6 +886,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F38DA0F21B8219900D795AD /* Build configuration list for PBXNativeTarget "TheInternalObjCStaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F38DA0D21B8219900D795AD /* Debug */,
+				8F38DA0E21B8219900D795AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FFAEAF4219C5CCD00D165FD /* Build configuration list for PBXProject "TheApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -9,4 +9,5 @@
 #ifndef TheApp_BridgingHeader_h
 #define TheApp_BridgingHeader_h
 
+#import <TheInternalObjCStaticLibrary/TheInternalObjCStaticLibrary.h>
 #endif /* TheApp_BridgingHeader_h */
