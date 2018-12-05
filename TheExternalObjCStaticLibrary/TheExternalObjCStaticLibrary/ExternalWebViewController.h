@@ -1,5 +1,5 @@
 //
-//  WebViewController.h
+//  ExternalWebViewController.h
 //  TheInternalObjCStaticLibrary
 //
 //  Created by Laurie Keith on 05/12/2018.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WebViewController : UIViewController <WKNavigationDelegate>
+@interface ExternalWebViewController : UIViewController <WKNavigationDelegate>
 
 @end
 

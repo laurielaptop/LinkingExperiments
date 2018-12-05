@@ -11,7 +11,11 @@
 		8F38DA1021B821B900D795AD /* libTheInternalObjCStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */; };
 		8F38DA1821B8294600D795AD /* TheInternalObjCStaticLibraryIdentifier.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */; };
 		8F38DA1921B8294600D795AD /* TheInternalObjCStaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */; };
-		8F38DA1C21B82BDF00D795AD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA1B21B82BDF00D795AD /* WebViewController.m */; };
+		8F38DA1C21B82BDF00D795AD /* InternalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38DA1B21B82BDF00D795AD /* InternalWebViewController.m */; };
+		8F38DA3F21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA3E21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a */; };
+		8F38DA4921B83C4D00D795AD /* TheInternalSwiftStaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F38DA4721B83C4D00D795AD /* TheInternalSwiftStaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F38DA4C21B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */; };
+		8F38DA4D21B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */; };
 		8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */; };
 		8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; };
@@ -42,6 +46,16 @@
 		8FFAEC04219CC28F00D165FD /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEC03219CC28F00D165FD /* Tile.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8F38DA4A21B83C4D00D795AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FFAEAF1219C5CCD00D165FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F38DA4421B83C4D00D795AD;
+			remoteInfo = TheInternalSwiftStaticFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		8F29B44B21B7F814007A4A35 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -65,6 +79,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F38DA5121B83C4D00D795AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F38DA4D21B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEB4C219C5DA700D165FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,8 +106,12 @@
 		8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticLibraryIdentifier.h; sourceTree = "<group>"; };
 		8F38DA0A21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheInternalObjCStaticLibraryIdentifier.m; sourceTree = "<group>"; };
 		8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCStaticLibrary.h; sourceTree = "<group>"; };
-		8F38DA1A21B82BDF00D795AD /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		8F38DA1B21B82BDF00D795AD /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		8F38DA1A21B82BDF00D795AD /* InternalWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternalWebViewController.h; sourceTree = "<group>"; };
+		8F38DA1B21B82BDF00D795AD /* InternalWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternalWebViewController.m; sourceTree = "<group>"; };
+		8F38DA3E21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalObjCStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheInternalSwiftStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F38DA4721B83C4D00D795AD /* TheInternalSwiftStaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalSwiftStaticFramework.h; sourceTree = "<group>"; };
+		8F38DA4821B83C4D00D795AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,15 +153,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F38DA4221B83C4D00D795AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF6219C5CCD00D165FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F38DA3F21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a in Frameworks */,
 				8F38DA1021B821B900D795AD /* libTheInternalObjCStaticLibrary.a in Frameworks */,
 				8FF6A18921B8130000D0DA89 /* TheExternalSwiftStaticFramework.framework in Frameworks */,
 				8FF6A16F21B811B400D0DA89 /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
 				8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */,
 				8FF6A17121B811B400D0DA89 /* TheInternalSwiftFramework.framework in Frameworks */,
+				8F38DA4C21B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework in Frameworks */,
 				8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */,
 				8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */,
 				8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */,
@@ -168,13 +206,22 @@
 		8F38DA0821B8219900D795AD /* TheInternalObjCStaticLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				8F38DA1A21B82BDF00D795AD /* InternalWebViewController.h */,
+				8F38DA1B21B82BDF00D795AD /* InternalWebViewController.m */,
+				8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */,
 				8F38DA0921B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.h */,
 				8F38DA0A21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m */,
-				8F38DA1121B8236400D795AD /* TheInternalObjCStaticLibrary.h */,
-				8F38DA1A21B82BDF00D795AD /* WebViewController.h */,
-				8F38DA1B21B82BDF00D795AD /* WebViewController.m */,
 			);
 			path = TheInternalObjCStaticLibrary;
+			sourceTree = "<group>";
+		};
+		8F38DA4621B83C4D00D795AD /* TheInternalSwiftStaticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				8F38DA4721B83C4D00D795AD /* TheInternalSwiftStaticFramework.h */,
+				8F38DA4821B83C4D00D795AD /* Info.plist */,
+			);
+			path = TheInternalSwiftStaticFramework;
 			sourceTree = "<group>";
 		};
 		8FFAEAF0219C5CCD00D165FD = {
@@ -186,6 +233,7 @@
 				8FFAEBEC219CBCE000D165FD /* TheInternalObjCFramework */,
 				8F38DA0821B8219900D795AD /* TheInternalObjCStaticLibrary */,
 				8FFAEB77219C6DBE00D165FD /* TheInternalSwiftFramework */,
+				8F38DA4621B83C4D00D795AD /* TheInternalSwiftStaticFramework */,
 				8FFAEB4F219C5DA700D165FD /* TheInternalSwiftStaticLibrary */,
 			);
 			sourceTree = "<group>";
@@ -198,6 +246,7 @@
 				8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */,
 				8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */,
 				8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */,
+				8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +277,7 @@
 		8FFAEB5C219C600700D165FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F38DA3E21B8384E00D795AD /* libTheExternalObjCStaticLibrary.a */,
 				8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */,
 				8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */,
 				8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */,
@@ -253,13 +303,13 @@
 		8FFAEBEC219CBCE000D165FD /* TheInternalObjCFramework */ = {
 			isa = PBXGroup;
 			children = (
-				8FFAEC03219CC28F00D165FD /* Tile.png */,
 				8FFAEBEE219CBCE000D165FD /* Info.plist */,
+				8FFAEBFF219CC16500D165FD /* OpenGLViewController.h */,
+				8FFAEC00219CC16500D165FD /* OpenGLViewController.m */,
 				8FFAEBED219CBCE000D165FD /* TheInternalObjCFramework.h */,
 				8FFAEBF7219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.h */,
 				8FFAEBF8219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.m */,
-				8FFAEBFF219CC16500D165FD /* OpenGLViewController.h */,
-				8FFAEC00219CC16500D165FD /* OpenGLViewController.m */,
+				8FFAEC03219CC28F00D165FD /* Tile.png */,
 			);
 			path = TheInternalObjCFramework;
 			sourceTree = "<group>";
@@ -267,6 +317,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8F38DA4021B83C4D00D795AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F38DA4921B83C4D00D795AD /* TheInternalSwiftStaticFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEB71219C6DBE00D165FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +363,24 @@
 			productReference = 8F38DA0721B8219900D795AD /* libTheInternalObjCStaticLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		8F38DA4421B83C4D00D795AD /* TheInternalSwiftStaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F38DA4E21B83C4D00D795AD /* Build configuration list for PBXNativeTarget "TheInternalSwiftStaticFramework" */;
+			buildPhases = (
+				8F38DA4021B83C4D00D795AD /* Headers */,
+				8F38DA4121B83C4D00D795AD /* Sources */,
+				8F38DA4221B83C4D00D795AD /* Frameworks */,
+				8F38DA4321B83C4D00D795AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheInternalSwiftStaticFramework;
+			productName = TheInternalSwiftStaticFramework;
+			productReference = 8F38DA4521B83C4D00D795AD /* TheInternalSwiftStaticFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8FFAEAF8219C5CCD00D165FD /* TheApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FFAEB0B219C5CCE00D165FD /* Build configuration list for PBXNativeTarget "TheApp" */;
@@ -313,10 +389,12 @@
 				8FFAEAF6219C5CCD00D165FD /* Frameworks */,
 				8FFAEAF7219C5CCD00D165FD /* Resources */,
 				8F29B44B21B7F814007A4A35 /* CopyFiles */,
+				8F38DA5121B83C4D00D795AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F38DA4B21B83C4D00D795AD /* PBXTargetDependency */,
 			);
 			name = TheApp;
 			productName = TheApp;
@@ -390,6 +468,9 @@
 					8F38DA0621B8219900D795AD = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					8F38DA4421B83C4D00D795AD = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					8FFAEAF8219C5CCD00D165FD = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -423,11 +504,19 @@
 				8FFAEB75219C6DBE00D165FD /* TheInternalSwiftFramework */,
 				8FFAEBEA219CBCE000D165FD /* TheInternalObjCFramework */,
 				8F38DA0621B8219900D795AD /* TheInternalObjCStaticLibrary */,
+				8F38DA4421B83C4D00D795AD /* TheInternalSwiftStaticFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F38DA4321B83C4D00D795AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FFAEAF7219C5CCD00D165FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,7 +571,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F38DA0B21B8219900D795AD /* TheInternalObjCStaticLibraryIdentifier.m in Sources */,
-				8F38DA1C21B82BDF00D795AD /* WebViewController.m in Sources */,
+				8F38DA1C21B82BDF00D795AD /* InternalWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F38DA4121B83C4D00D795AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +619,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F38DA4B21B83C4D00D795AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F38DA4421B83C4D00D795AD /* TheInternalSwiftStaticFramework */;
+			targetProxy = 8F38DA4A21B83C4D00D795AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8FFAEB00219C5CCD00D165FD /* Main.storyboard */ = {
@@ -569,6 +673,64 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F38DA4F21B83C4D00D795AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TheInternalSwiftStaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurielaptop.TheInternalSwiftStaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F38DA5021B83C4D00D795AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZSCVK75X64;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TheInternalSwiftStaticFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurielaptop.TheInternalSwiftStaticFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -695,7 +857,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
-				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary";
+				HEADER_SEARCH_PATHS = (
+					"${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary",
+					"${TARGET_BUILD_DIR}/include/TheExternalObjCStaticLibrary",
+				);
 				INFOPLIST_FILE = TheApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -719,7 +884,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSCVK75X64;
-				HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary";
+				HEADER_SEARCH_PATHS = (
+					"${TARGET_BUILD_DIR}/include/TheInternalObjCStaticLibrary",
+					"${TARGET_BUILD_DIR}/include/TheExternalObjCStaticLibrary",
+				);
 				INFOPLIST_FILE = TheApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -891,6 +1059,15 @@
 			buildConfigurations = (
 				8F38DA0D21B8219900D795AD /* Debug */,
 				8F38DA0E21B8219900D795AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F38DA4E21B83C4D00D795AD /* Build configuration list for PBXNativeTarget "TheInternalSwiftStaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F38DA4F21B83C4D00D795AD /* Debug */,
+				8F38DA5021B83C4D00D795AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

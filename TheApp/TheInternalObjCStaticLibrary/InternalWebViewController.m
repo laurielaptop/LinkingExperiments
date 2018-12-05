@@ -6,16 +6,16 @@
 //  Copyright © 2018 Laurie Laptop. All rights reserved.
 //
 
-#import "WebViewController.h"
+#import "InternalWebViewController.h"
 
-@interface WebViewController ()
+@interface InternalWebViewController ()
 
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
 @end
 
-@implementation WebViewController
+@implementation InternalWebViewController
 
 // MARK: - View Lifecycle
 

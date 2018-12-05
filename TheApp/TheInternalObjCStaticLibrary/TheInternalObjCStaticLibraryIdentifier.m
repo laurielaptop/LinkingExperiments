@@ -7,7 +7,7 @@
 //
 
 #import "TheInternalObjCStaticLibraryIdentifier.h"
-#import "WebViewController.h"
+#import "InternalWebViewController.h"
 
 @implementation TheInternalObjCStaticLibraryIdentifier
 
@@ -16,7 +16,7 @@
 }
 
 - (UIViewController*)controller {
-    return [[WebViewController alloc] init];
+    return [[InternalWebViewController alloc] init];
 }
 
 @end

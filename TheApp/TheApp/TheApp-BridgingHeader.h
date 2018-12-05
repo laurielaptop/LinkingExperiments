@@ -10,4 +10,5 @@
 #define TheApp_BridgingHeader_h
 
 #import <TheInternalObjCStaticLibrary/TheInternalObjCStaticLibrary.h>
+#import <TheExternalObjCStaticLibrary/TheExternalObjCStaticLibrary.h>
 #endif /* TheApp_BridgingHeader_h */
