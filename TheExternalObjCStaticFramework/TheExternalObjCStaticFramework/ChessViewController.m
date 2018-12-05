@@ -27,7 +27,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
-    NSString *frameworksPath = [[[NSBundle mainBundle] privateFrameworksPath] stringByAppendingPathComponent:@"TheExternalObjCStaticFramework.framework"];
+    NSString *frameworksPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"TheExternalObjCStaticFramework.framework"];
     NSBundle *bundle = [NSBundle bundleWithPath:frameworksPath];
     NSString *path = [bundle pathForResource:@"chess" ofType:@"html"];
     if (path) {

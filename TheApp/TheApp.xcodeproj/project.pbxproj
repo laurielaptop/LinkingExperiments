@@ -7,58 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F29B43121B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */; };
-		8F29B44E21B7F86D007A4A35 /* TheExternalObjCStaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */; };
+		8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */; };
+		8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; };
+		8FF6A16C21B811B400D0DA89 /* TheExternalSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16B21B811B400D0DA89 /* TheExternalSwiftFramework.framework */; };
+		8FF6A16E21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF6A16D21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework */; };
+		8FF6A16F21B811B400D0DA89 /* libTheInternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB4E219C5DA700D165FD /* libTheInternalSwiftStaticLibrary.a */; };
+		8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */; };
+		8FF6A17121B811B400D0DA89 /* TheInternalSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */; };
+		8FF6A17221B8121E00D0DA89 /* TheExternalObjCStaticFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEAFD219C5CCD00D165FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */; };
 		8FFAEB02219C5CCD00D165FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB00219C5CCD00D165FD /* Main.storyboard */; };
 		8FFAEB04219C5CCE00D165FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB03219C5CCE00D165FD /* Assets.xcassets */; };
 		8FFAEB07219C5CCE00D165FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB05219C5CCE00D165FD /* LaunchScreen.storyboard */; };
 		8FFAEB51219C5DA700D165FD /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEB50219C5DA700D165FD /* Identifier.swift */; };
-		8FFAEB5A219C600000D165FD /* TheExternalSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB59219C600000D165FD /* TheExternalSwiftFramework.framework */; };
-		8FFAEB5B219C600000D165FD /* TheExternalSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB59219C600000D165FD /* TheExternalSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8FFAEB5E219C600700D165FD /* libTheExternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB5D219C600700D165FD /* libTheExternalSwiftStaticLibrary.a */; };
-		8FFAEB5F219C600700D165FD /* libTheInternalSwiftStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB4E219C5DA700D165FD /* libTheInternalSwiftStaticLibrary.a */; };
 		8FFAEB7A219C6DBE00D165FD /* TheInternalSwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFAEB78219C6DBE00D165FD /* TheInternalSwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FFAEB7D219C6DBE00D165FD /* TheInternalSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */; };
-		8FFAEB7E219C6DBE00D165FD /* TheInternalSwiftFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEB83219C6DDE00D165FD /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEB82219C6DDE00D165FD /* Identifier.swift */; };
 		8FFAEB85219C6FE600D165FD /* LibraryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEB84219C6FE600D165FD /* LibraryListController.swift */; };
 		8FFAEB8D219C76FF00D165FD /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEB8C219C76FF00D165FD /* DocumentViewController.swift */; };
 		8FFAEB8F219C778E00D165FD /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEB8E219C778E00D165FD /* AnimationViewController.swift */; };
 		8FFAEB95219C861900D165FD /* Document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEB94219C861900D165FD /* Document.pdf */; };
-		8FFAEBB3219C950100D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBB1219C94F400D165FD /* TheExternalSwiftProtocolsFramework.framework */; };
-		8FFAEBB4219C950100D165FD /* TheExternalSwiftProtocolsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBB1219C94F400D165FD /* TheExternalSwiftProtocolsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8FFAEBB6219C952400D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBB5219C952400D165FD /* TheExternalSwiftProtocolsFramework.framework */; };
-		8FFAEBB8219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBB7219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework */; };
-		8FFAEBE0219CA30E00D165FD /* TheExternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBDF219CA30E00D165FD /* TheExternalObjCFramework.framework */; };
-		8FFAEBE1219CA30E00D165FD /* TheExternalObjCFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBDF219CA30E00D165FD /* TheExternalObjCFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEBEF219CBCE000D165FD /* TheInternalObjCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFAEBED219CBCE000D165FD /* TheInternalObjCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FFAEBF2219CBCE000D165FD /* TheInternalObjCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */; };
-		8FFAEBF3219CBCE000D165FD /* TheInternalObjCFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FFAEBF9219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFAEBF7219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFAEBFA219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEBF8219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.m */; };
-		8FFAEBFC219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAEBFB219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework */; };
 		8FFAEC01219CC16500D165FD /* OpenGLViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFAEBFF219CC16500D165FD /* OpenGLViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FFAEC02219CC16500D165FD /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFAEC00219CC16500D165FD /* OpenGLViewController.m */; };
 		8FFAEC04219CC28F00D165FD /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFAEC03219CC28F00D165FD /* Tile.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8FFAEB7B219C6DBE00D165FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8FFAEAF1219C5CCD00D165FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8FFAEB75219C6DBE00D165FD;
-			remoteInfo = TheInternalSwiftFramework;
-		};
-		8FFAEBF0219CBCE000D165FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8FFAEAF1219C5CCD00D165FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8FFAEBEA219CBCE000D165FD;
-			remoteInfo = TheInternalObjCFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8F29B44B21B7F814007A4A35 /* CopyFiles */ = {
@@ -67,23 +42,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				8FF6A17221B8121E00D0DA89 /* TheExternalObjCStaticFramework.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8FFAEB49219C5D5E00D165FD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8F29B44E21B7F86D007A4A35 /* TheExternalObjCStaticFramework.framework in Embed Frameworks */,
-				8FFAEB7E219C6DBE00D165FD /* TheInternalSwiftFramework.framework in Embed Frameworks */,
-				8FFAEBB4219C950100D165FD /* TheExternalSwiftProtocolsFramework.framework in Embed Frameworks */,
-				8FFAEBE1219CA30E00D165FD /* TheExternalObjCFramework.framework in Embed Frameworks */,
-				8FFAEB5B219C600000D165FD /* TheExternalSwiftFramework.framework in Embed Frameworks */,
-				8FFAEBF3219CBCE000D165FD /* TheInternalObjCFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8FFAEB4C219C5DA700D165FD /* CopyFiles */ = {
@@ -98,7 +58,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A16B21B811B400D0DA89 /* TheExternalSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF6A16D21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAF9219C5CCD00D165FD /* TheApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEAFC219C5CCD00D165FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFAEB01219C5CCD00D165FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,8 +71,6 @@
 		8FFAEB08219C5CCE00D165FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FFAEB4E219C5DA700D165FD /* libTheInternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTheInternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEB50219C5DA700D165FD /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
-		8FFAEB59219C600000D165FD /* TheExternalSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFAEB5D219C600700D165FD /* libTheExternalSwiftStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalSwiftStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEB76219C6DBE00D165FD /* TheInternalSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheInternalSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEB78219C6DBE00D165FD /* TheInternalSwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalSwiftFramework.h; sourceTree = "<group>"; };
 		8FFAEB79219C6DBE00D165FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,20 +79,14 @@
 		8FFAEB8C219C76FF00D165FD /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		8FFAEB8E219C778E00D165FD /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		8FFAEB94219C861900D165FD /* Document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Document.pdf; sourceTree = "<group>"; };
-		8FFAEBB1219C94F400D165FD /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFAEBB5219C952400D165FD /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFAEBB7219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFAEBDF219CA30E00D165FD /* TheExternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEBEB219CBCE000D165FD /* TheInternalObjCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheInternalObjCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEBED219CBCE000D165FD /* TheInternalObjCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCFramework.h; sourceTree = "<group>"; };
 		8FFAEBEE219CBCE000D165FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FFAEBF7219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheInternalObjCFrameworkIdentifier.h; sourceTree = "<group>"; };
 		8FFAEBF8219CBD1C00D165FD /* TheInternalObjCFrameworkIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheInternalObjCFrameworkIdentifier.m; sourceTree = "<group>"; };
-		8FFAEBFB219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheExternalSwiftProtocolsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEBFF219CC16500D165FD /* OpenGLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
 		8FFAEC00219CC16500D165FD /* OpenGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		8FFAEC03219CC28F00D165FD /* Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tile.png; sourceTree = "<group>"; };
-		8FFAEC20219CC7B700D165FD /* libTheExternalObjCStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTheExternalObjCStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFAEC2C219CD50200D165FD /* TheApp-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheApp-BridgingHeader.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,14 +95,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F29B43121B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework in Frameworks */,
-				8FFAEB5F219C600700D165FD /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
-				8FFAEB5E219C600700D165FD /* libTheExternalSwiftStaticLibrary.a in Frameworks */,
-				8FFAEBE0219CA30E00D165FD /* TheExternalObjCFramework.framework in Frameworks */,
-				8FFAEB5A219C600000D165FD /* TheExternalSwiftFramework.framework in Frameworks */,
-				8FFAEBF2219CBCE000D165FD /* TheInternalObjCFramework.framework in Frameworks */,
-				8FFAEB7D219C6DBE00D165FD /* TheInternalSwiftFramework.framework in Frameworks */,
-				8FFAEBB3219C950100D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
+				8FF6A16F21B811B400D0DA89 /* libTheInternalSwiftStaticLibrary.a in Frameworks */,
+				8FF6A17021B811B400D0DA89 /* TheInternalObjCFramework.framework in Frameworks */,
+				8FF6A17121B811B400D0DA89 /* TheInternalSwiftFramework.framework in Frameworks */,
+				8FF6A16621B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a in Frameworks */,
+				8FF6A16821B811B400D0DA89 /* TheExternalObjCFramework.framework in Frameworks */,
+				8FF6A16A21B811B400D0DA89 /* TheExternalObjCStaticFramework.framework in Frameworks */,
+				8FF6A16C21B811B400D0DA89 /* TheExternalSwiftFramework.framework in Frameworks */,
+				8FF6A16E21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FFAEBB8219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FFAEBB6219C952400D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FFAEBFC219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +136,6 @@
 				8FFAEB5C219C600700D165FD /* Frameworks */,
 				8FFAEAFA219C5CCD00D165FD /* Products */,
 				8FFAEAFB219C5CCD00D165FD /* TheApp */,
-				8FFAEBDF219CA30E00D165FD /* TheExternalObjCFramework.framework */,
-				8FFAEB59219C600000D165FD /* TheExternalSwiftFramework.framework */,
 				8FFAEBEC219CBCE000D165FD /* TheInternalObjCFramework */,
 				8FFAEB77219C6DBE00D165FD /* TheInternalSwiftFramework */,
 				8FFAEB4F219C5DA700D165FD /* TheInternalSwiftStaticLibrary */,
@@ -228,13 +179,11 @@
 		8FFAEB5C219C600700D165FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F29B43021B7ED5E007A4A35 /* TheExternalObjCStaticFramework.framework */,
-				8FFAEC20219CC7B700D165FD /* libTheExternalObjCStaticLibrary.a */,
-				8FFAEBFB219CBD2B00D165FD /* TheExternalSwiftProtocolsFramework.framework */,
-				8FFAEBB7219C953200D165FD /* TheExternalSwiftProtocolsFramework.framework */,
-				8FFAEBB5219C952400D165FD /* TheExternalSwiftProtocolsFramework.framework */,
-				8FFAEBB1219C94F400D165FD /* TheExternalSwiftProtocolsFramework.framework */,
-				8FFAEB5D219C600700D165FD /* libTheExternalSwiftStaticLibrary.a */,
+				8FF6A16521B811B400D0DA89 /* libTheExternalSwiftStaticLibrary.a */,
+				8FF6A16721B811B400D0DA89 /* TheExternalObjCFramework.framework */,
+				8FF6A16921B811B400D0DA89 /* TheExternalObjCStaticFramework.framework */,
+				8FF6A16B21B811B400D0DA89 /* TheExternalSwiftFramework.framework */,
+				8FF6A16D21B811B400D0DA89 /* TheExternalSwiftProtocolsFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,14 +245,11 @@
 				8FFAEAF5219C5CCD00D165FD /* Sources */,
 				8FFAEAF6219C5CCD00D165FD /* Frameworks */,
 				8FFAEAF7219C5CCD00D165FD /* Resources */,
-				8FFAEB49219C5D5E00D165FD /* Embed Frameworks */,
 				8F29B44B21B7F814007A4A35 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8FFAEB7C219C6DBE00D165FD /* PBXTargetDependency */,
-				8FFAEBF1219CBCE000D165FD /* PBXTargetDependency */,
 			);
 			name = TheApp;
 			productName = TheApp;
@@ -498,19 +444,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		8FFAEB7C219C6DBE00D165FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8FFAEB75219C6DBE00D165FD /* TheInternalSwiftFramework */;
-			targetProxy = 8FFAEB7B219C6DBE00D165FD /* PBXContainerItemProxy */;
-		};
-		8FFAEBF1219CBCE000D165FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8FFAEBEA219CBCE000D165FD /* TheInternalObjCFramework */;
-			targetProxy = 8FFAEBF0219CBCE000D165FD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		8FFAEB00219C5CCD00D165FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -650,7 +583,6 @@
 		8FFAEB0C219C5CCE00D165FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,7 +607,6 @@
 		8FFAEB0D219C5CCE00D165FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
