@@ -9,8 +9,9 @@
 import UIKit
 import TheExternalSwiftProtocolsFramework
 import TheExternalSwiftFramework
-import TheExternalSwiftStaticFramework
 import TheInternalSwiftFramework
+import TheExternalSwiftStaticFramework
+import TheInternalSwiftStaticFramework
 import TheExternalSwiftStaticLibrary
 import TheInternalSwiftStaticLibrary
 import TheExternalObjCFramework
@@ -19,9 +20,9 @@ import TheInternalObjCFramework
 import TheExternalObjCFramework
 
 enum DataSource {
-    case externalSwiftFramework, externalSwiftStaticFramework, internalSwiftFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework, internalObjCStaticLibrary, externalObjCStaticLibrary
+    case externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary, externalObjCFramework, externalObjCStaticFramework, internalObjCFramework, internalObjCStaticLibrary, externalObjCStaticLibrary
     static var items: [[DataSource]] {
-        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework, externalObjCStaticFramework, externalObjCStaticLibrary, internalObjCStaticLibrary]]
+        return [[externalSwiftFramework, internalSwiftFramework, externalSwiftStaticFramework, internalSwiftStaticFramework, externalSwiftStaticLibrary, internalSwiftStaticLibrary], [externalObjCFramework, internalObjCFramework, externalObjCStaticFramework, externalObjCStaticLibrary, internalObjCStaticLibrary]]
     }
     static func item(atIndexPath indexPath: IndexPath) -> DataSource {
         return DataSource.items[indexPath.section][indexPath.row]
@@ -30,10 +31,12 @@ enum DataSource {
         switch self {
         case .externalSwiftFramework:
             return TheExternalSwiftFramework.Identifier()
-        case .externalSwiftStaticFramework:
-            return TheExternalSwiftStaticFramework.Identifier()
         case .internalSwiftFramework:
             return TheInternalSwiftFramework.Identifier()
+        case .externalSwiftStaticFramework:
+            return TheExternalSwiftStaticFramework.Identifier()
+        case .internalSwiftStaticFramework:
+            return TheInternalSwiftStaticFramework.Identifier()
         case .externalSwiftStaticLibrary:
             return TheExternalSwiftStaticLibrary.Identifier()
         case .internalSwiftStaticLibrary:
